@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Capital Estate Co. — Bahrain Property Experts Since 1978 (concept design)</title>
+<meta name="description" content="Concept website for Capital Estate Co., Hoora, Manama — renting, leasing, sales, property management and valuation in Bahrain since 1978.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="concept" role="note">
+  <span data-i18n="concept">Concept design prepared by SSLC STARTUP for Capital Estate Co.</span>
+  <a href="https://www.sslctstartup.com" target="_blank" rel="noopener">www.sslctstartup.com</a>
+</div>
+
+<header class="header" id="top">
+  <div class="wrap header__inner">
+    <a href="#top" class="brand" aria-label="Capital Estate Co.">
+      <span class="brand__mark" aria-hidden="true">CE</span>
+      <span class="brand__text"><strong data-i18n="brand">Capital Estate Co.</strong><small data-i18n="brandSub">Real estate · Est. 1978</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#properties" data-i18n="nav1">Properties</a>
+      <a href="#services" data-i18n="nav2">Services</a>
+      <a href="#why" data-i18n="nav3">About us</a>
+      <a href="#landlords" data-i18n="nav4">Landlords</a>
+      <a href="#portal" data-i18n="nav5">Owner portal</a>
+      <a href="#contact" data-i18n="nav6">Contact</a>
+    </nav>
+    <div class="tools">
+      <button class="langbtn" id="langBtn" type="button" lang="ar" aria-label="عرض الموقع باللغة العربية">العربية</button>
+      <a class="btn btn--sm btn--gold tools__call" href="tel:+97317292323"><span data-i18n="call">Call</span> <bdi dir="ltr">1729 2323</bdi></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <img class="hero__img" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80" alt="Modern villa with a pool and palm trees in the evening light" fetchpriority="high">
+    <div class="hero__shade"></div>
+    <div class="wrap hero__content">
+      <p class="eyebrow eyebrow--light" data-i18n="heroEyebrow">Family-run · Hoora, Manama</p>
+      <h1 data-i18n="heroTitle">Bahrain property experts since 1978</h1>
+      <p class="hero__lead" data-i18n="heroLead">Renting, leasing, sales, property management and valuation — handled by the same family-run team that has served landlords and tenants across the Kingdom for 48 years.</p>
+      <div class="hero__cta">
+        <a href="#properties" class="btn btn--gold" data-i18n="heroCta1">Browse properties</a>
+        <a href="https://wa.me/97339800519?text=Hello%20Capital%20Estate%2C%20I%27m%20looking%20for%20a%20property%20in%20Bahrain." target="_blank" rel="noopener" class="btn btn--glass" data-i18n="heroCta2">WhatsApp our team</a>
+      </div>
+      <ul class="hero__badges">
+        <li><strong>48</strong><span data-i18n="b1">years in Bahrain</span></li>
+        <li><strong>5</strong><span data-i18n="b2">property services</span></li>
+        <li><strong data-i18n="b3v">Licensed</strong><span><span data-i18n="b3">RERA broker</span> <bdi dir="ltr">PM202004/0185</bdi></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="properties">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="eyebrow" data-i18n="propEyebrow">Featured listings</p>
+          <h2 data-i18n="propTitle">Homes available for rent</h2>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+      <form class="filters" id="filters" aria-label="Filter properties">
+        <div class="filters__f"><label for="f-type" data-i18n="fType">Property type</label>
+          <select id="f-type" name="ptype"><option value="all" data-i18n="optAll">All types</option><option value="villa" data-i18n="optVilla">Villa</option><option value="apartment" data-i18n="optApt">Apartment</option></select></div>
+        <div class="filters__f"><label for="f-furn" data-i18n="fFurn">Furnishing</label>
+          <select id="f-furn" name="furn"><option value="all" data-i18n="optAny">Any</option><option value="furnished" data-i18n="optFurn">Furnished</option><option value="unfurnished" data-i18n="optUnfurn">Unfurnished</option></select></div>
+        <div class="filters__f"><label for="f-beds" data-i18n="fBeds">Bedrooms</label>
+          <select id="f-beds" name="beds"><option value="0" data-i18n="optAny2">Any</option><option value="3">3+</option><option value="4">4+</option></select></div>
+        <div class="filters__f"><label for="f-price" data-i18n="fPrice">Max rent (BHD / month)</label>
+          <select id="f-price" name="price"><option value="0" data-i18n="optNoLimit">No limit</option><option value="400">400</option><option value="800">800</option><option value="1000">1,000</option></select></div>
+      </form>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden data-i18n="empty">No properties match these filters — message us and we'll check our full portfolio for you.</p>
+      <p class="note" data-i18n="propNote">Sample listings shown for the concept. The live site would sync with Capital Estate's current portfolio.</p>
+    </div>
+  </section>
+
+  <section class="section section--cream" id="services">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow" data-i18n="svcEyebrow">What we do</p>
+        <h2 data-i18n="svcTitle">Complete real-estate services under one roof</h2>
+      </div>
+      <div class="services">
+        <article class="svc"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15 16 6l11 9v11H5z"/><path d="M13 26v-7h6v7"/></svg><h3 data-i18n="s1t">Renting</h3><p data-i18n="s1d">Villas, apartments and compounds across Bahrain, matched to your budget and commute.</p></article>
+        <article class="svc"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="4" width="18" height="24" rx="2"/><path d="M11 10h10M11 15h10M11 20h6"/></svg><h3 data-i18n="s2t">Leasing</h3><p data-i18n="s2d">Corporate and long-term leases with clear contracts and RERA registration.</p></article>
+        <article class="svc"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 18 14 8l4 4 10-6"/><path d="M22 6h6v6"/><path d="M6 27h20"/></svg><h3 data-i18n="s3t">Sales</h3><p data-i18n="s3d">Buying or selling homes, buildings and land — with honest pricing advice.</p></article>
+        <article class="svc"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="4"/><path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M7.5 24.5l2.8-2.8M21.7 10.3l2.8-2.8"/></svg><h3 data-i18n="s4t">Property management</h3><p data-i18n="s4d">Rent collection, maintenance, inspections and tenant care, so owners can relax.</p></article>
+        <article class="svc"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 5 9v6c0 7 5 11 11 13 6-2 11-6 11-13V9z"/><path d="m11 16 4 4 6-7"/></svg><h3 data-i18n="s5t">Valuation</h3><p data-i18n="s5d">Market valuations for sale, rent, banks and inheritance, based on decades of local data.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="wrap why">
+      <div class="why__media">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1100&q=80" alt="Agent and client shaking hands after agreeing a deal" loading="lazy">
+        <div class="why__stamp"><strong>1978</strong><span data-i18n="stamp">Serving Bahrain since</span></div>
+      </div>
+      <div>
+        <p class="eyebrow" data-i18n="whyEyebrow">Why Capital Estate</p>
+        <h2 data-i18n="whyTitle">Three generations of trust in Bahraini real estate</h2>
+        <p class="muted" data-i18n="whyLead">Since 1978 our family has helped Bahraini families, expatriates and companies rent, buy and manage property. Many of our landlords have been with us for decades.</p>
+        <ul class="whylist">
+          <li><strong>48</strong><div><h3 data-i18n="w1t">48 years of experience</h3><p data-i18n="w1d">We know every neighbourhood, from Hoora and Adliya to Amwaj and Riffa.</p></div></li>
+          <li><strong>✓</strong><div><h3 data-i18n="w2t">Licensed &amp; regulated</h3><p><span data-i18n="w2d">Registered real-estate broker with RERA, licence no.</span> <bdi dir="ltr">PM202004/0185</bdi>.</p></div></li>
+          <li><strong>♥</strong><div><h3 data-i18n="w3t">Family-run, personal service</h3><p data-i18n="w3d">You speak directly with the people who make decisions — no call centres.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--navy" id="landlords">
+    <div class="wrap landlord">
+      <div>
+        <p class="eyebrow eyebrow--light" data-i18n="llEyebrow">For landlords</p>
+        <h2 data-i18n="llTitle">Let us rent, sell or manage your property</h2>
+        <p class="light" data-i18n="llLead">Tell us about your villa, apartment or building. We'll call you with a valuation and a plan — usually the same day.</p>
+        <ul class="ticks">
+          <li data-i18n="ll1">Free market valuation</li>
+          <li data-i18n="ll2">Verified, reliable tenants</li>
+          <li data-i18n="ll3">Full management with monthly statements</li>
+        </ul>
+      </div>
+      <form class="form" id="llForm" novalidate>
+        <div class="row">
+          <div class="field"><label for="l-name" data-i18n="lName">Your name</label><input id="l-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="l-phone" data-i18n="lPhone">Mobile number</label><input id="l-phone" name="phone" type="tel" autocomplete="tel" dir="ltr" placeholder="+973"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="l-type" data-i18n="lType">Property type</label>
+            <select id="l-type" name="ptype"><option value="Villa" data-i18n="optVilla2">Villa</option><option value="Apartment" data-i18n="optApt2">Apartment</option><option value="Building" data-i18n="optBldg">Building</option><option value="Land" data-i18n="optLand">Land</option></select></div>
+          <div class="field"><label for="l-service" data-i18n="lService">Service needed</label>
+            <select id="l-service" name="service"><option value="Renting / leasing" data-i18n="optSvc1">Renting / leasing</option><option value="Sale" data-i18n="optSvc2">Sale</option><option value="Property management" data-i18n="optSvc3">Property management</option><option value="Valuation" data-i18n="optSvc4">Valuation</option></select></div>
+        </div>
+        <div class="field"><label for="l-area" data-i18n="lArea">Area / location</label><input id="l-area" name="area" data-i18n-ph="lAreaPh" placeholder="e.g. Jidhafs, Saar, Amwaj"></div>
+        <p class="form__error" id="llError" role="alert"></p>
+        <button class="btn btn--wa" type="submit"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg> <span data-i18n="lBtn">Send on WhatsApp</span></button>
+        <p class="form__note" data-i18n="lNote">Opens WhatsApp with your details pre-filled to Capital Estate (+973 3980 0519).</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="portal">
+    <div class="wrap portal">
+      <div>
+        <p class="eyebrow" data-i18n="ptEyebrow">Coming soon</p>
+        <h2 data-i18n="ptTitle">Owner portal — your property, in your pocket</h2>
+        <p class="muted" data-i18n="ptLead">Managed owners will see rent received, upcoming renewals, maintenance requests and statements in one secure dashboard — in English or Arabic, on any phone.</p>
+        <ul class="ticks ticks--dark">
+          <li data-i18n="pt1">Live rent and payment status per unit</li>
+          <li data-i18n="pt2">Maintenance tickets with photos</li>
+          <li data-i18n="pt3">Download monthly statements as PDF</li>
+        </ul>
+        <a class="btn" href="https://wa.me/97339800519?text=Hello%20Capital%20Estate%2C%20please%20add%20me%20to%20the%20owner%20portal%20early-access%20list." target="_blank" rel="noopener" data-i18n="ptCta">Request early access</a>
+      </div>
+      <div class="dash" aria-label="Preview of the owner portal dashboard" role="img">
+        <div class="dash__bar"><span></span><span></span><span></span><em data-i18n="dashUrl">owners.capitalestate.net</em></div>
+        <div class="dash__body">
+          <p class="dash__hello" data-i18n="dashHello">Good morning, Mr. Ahmed</p>
+          <div class="dash__kpis">
+            <div><span data-i18n="k1">Rent collected · Oct</span><strong>BD 4,860</strong></div>
+            <div><span data-i18n="k2">Occupancy</span><strong>11 / 12</strong></div>
+            <div><span data-i18n="k3">Open tickets</span><strong>2</strong></div>
+          </div>
+          <div class="dash__chart" aria-hidden="true"><i style="--h:55%"></i><i style="--h:62%"></i><i style="--h:58%"></i><i style="--h:70%"></i><i style="--h:74%"></i><i style="--h:68%"></i><i style="--h:80%"></i><i style="--h:86%"></i><i style="--h:83%"></i><i style="--h:92%"></i></div>
+          <ul class="dash__list">
+            <li><span data-i18n="d1">Villa 12, Jidhafs — AC service</span><b class="ok" data-i18n="d1s">Done</b></li>
+            <li><span data-i18n="d2">Flat 304, Reef Island — lease renewal</span><b class="warn" data-i18n="d2s">14 days</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream" id="reviews">
+    <div class="wrap">
+      <div class="head head--center">
+        <p class="eyebrow" data-i18n="rvEyebrow">Client words</p>
+        <h2 data-i18n="rvTitle">What clients say</h2>
+        <p class="note" data-i18n="rvNote">Sample testimonials for the concept — to be replaced with real Capital Estate client reviews.</p>
+      </div>
+      <div class="reviews">
+        <blockquote class="review"><p data-i18n="r1">“They have managed our two villas for over fifteen years. Rent arrives on time and every repair is handled before we even hear about it.”</p><footer data-i18n="r1a">Sample landlord · Saar</footer></blockquote>
+        <blockquote class="review"><p data-i18n="r2">“We found a furnished apartment on Reef Island within a week of arriving in Bahrain. Honest advice and no hidden fees.”</p><footer data-i18n="r2a">Sample tenant · Reef Island</footer></blockquote>
+        <blockquote class="review"><p data-i18n="r3">“Their valuation was spot on and our building sold close to the asking price. A truly professional family business.”</p><footer data-i18n="r3a">Sample seller · Manama</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap contact">
+      <div>
+        <p class="eyebrow" data-i18n="ctEyebrow">Contact</p>
+        <h2 data-i18n="ctTitle">Visit our office in Hoora</h2>
+        <ul class="clist">
+          <li><span class="clist__k" data-i18n="ctAddrK">Address</span><span data-i18n="ctAddr">Office 11, Building 718, Road 2018, Block 320, Hoora, Manama, Kingdom of Bahrain</span></li>
+          <li><span class="clist__k" data-i18n="ctPhoneK">Phone</span><a href="tel:+97317292323"><bdi dir="ltr">+973 1729 2323</bdi></a></li>
+          <li><span class="clist__k" data-i18n="ctWaK">WhatsApp</span><a href="https://wa.me/97339800519" target="_blank" rel="noopener"><bdi dir="ltr">+973 3980 0519</bdi></a></li>
+          <li><span class="clist__k" data-i18n="ctMailK">Email</span><a href="mailto:info@capitalestate.net">info@capitalestate.net</a></li>
+        </ul>
+        <div class="contact__cta">
+          <a class="btn btn--wa btn--auto" href="https://wa.me/97339800519?text=Hello%20Capital%20Estate%2C%20I%20have%20a%20property%20enquiry." target="_blank" rel="noopener" data-i18n="ctWa">Chat on WhatsApp</a>
+          <a class="btn btn--outline" href="tel:+97317292323" data-i18n="ctCall">Call the office</a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <svg viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="300" fill="#e9e4d8"/>
+          <path d="M0 210 C80 190 120 240 200 220 S330 180 400 200 V300 H0z" fill="#cfe0e6"/>
+          <g stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"><path d="M-10 90 H410"/><path d="M140 -10 V310"/><path d="M-10 160 L410 120"/></g>
+          <g stroke="#fff" stroke-width="4" fill="none"><path d="M60 0 V200"/><path d="M260 0 V230"/><path d="M0 40 H400"/><path d="M330 0 V210"/></g>
+          <g fill="#ddd6c6"><rect x="155" y="100" width="90" height="15" rx="2"/><rect x="20" y="105" width="30" height="40" rx="2"/><rect x="275" y="50" width="45" height="30" rx="2"/><rect x="75" y="50" width="55" height="30" rx="2"/></g>
+        </svg>
+        <div class="mapbox__pin" aria-hidden="true"><span>CE</span></div>
+        <div class="mapbox__card">
+          <strong data-i18n="mapT">Capital Estate Co. — Hoora</strong>
+          <span data-i18n="mapD">Map placeholder · live Google Map in final site</span>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Capital%20Estate%20Hoora%20Manama%20Bahrain" target="_blank" rel="noopener" data-i18n="mapLink">Open in Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>
+      <p class="footer__brand" data-i18n="brand">Capital Estate Co.</p>
+      <p data-i18n="ftText">Renting · Leasing · Sales · Property management · Valuation — Hoora, Manama, since 1978.</p>
+    </div>
+    <p class="footer__lic"><span data-i18n="ftLic">RERA broker licence</span> <bdi dir="ltr">PM202004/0185</bdi></p>
+  </div>
+  <p class="credit"><span data-i18n="credit">Demo website by</span> <a href="https://www.sslctstartup.com" target="_blank" rel="noopener">SSLC STARTUP — www.sslctstartup.com</a></p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/97339800519?text=Hello%20Capital%20Estate%2C%20I%20have%20a%20property%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp Capital Estate">
+  <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
